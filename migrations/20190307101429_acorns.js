@@ -1,7 +1,7 @@
 'use strict'
 
 exports.up = function(knex) {
-  return knex.schema.createTable('acornsdb', (table) => {
+  return knex.schema.createTable('acorns', (table) => {
     table.increments() // id
     table.string('title').notNullable()
     table.string('category').notNullable()
@@ -11,5 +11,5 @@ exports.up = function(knex) {
 }
 
 exports.down = function(knex) {
-  return knex.schema.dropTable('acornsdb')
+  return knex.schema.dropTable('acorns')
 }

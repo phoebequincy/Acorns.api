@@ -1,10 +1,10 @@
 'use strict'
 exports.seed = function(knex) {
     // Deletes ALL existing entries
-    return knex('acornsdb').del()
+    return knex('acorns').del()
       .then(function() {
           // Inserts seed entries
-          return knex('acornsdb').insert(
+          return knex('acorns').insert(
             [
               {
                 id: 1,
@@ -44,31 +44,31 @@ exports.seed = function(knex) {
                },
                {
                 id: 7,
-                title: " ",
-	              category: " ",
-                content: " ",
+                title: "A blanket statement.",
+	              category: "Simple Comforts",
+                content: "Climb under a big heavy comforter, or soft, plush blanket. Wrap it around you like a burrito and take a nap.",
                },
                {
                 id: 8,
-                title: " ",
-	              category: " ",
-                content: " ",
+                title: "Pretty little plants.",
+	              category: "Simple Comforts",
+                content: "Bring some green inside by getting a few succulents and planting them in little decorative ceramic bowls. Put them next to the sink so you look on them when you're doing the dishes.",
 	             },
 	             {
 	              id: 9,
-                title: "v",
-	              category: " ",
-                content: " ",
+                title: "Hot and berry tasty.",
+	              category: "Food",
+                content: "Heat some cranberry juice and add a splash of lemon and a few slices of fresh ginger, make it spicier with a tiny smidge of cayenne pepper.",
 	             },
                {
                 id: 10,
-                title: " ",
-	              category: " ",
-                content: " ",
+                title: "Doing nothing is something.",
+	              category: "Wisdom",
+                content: "Give yourself permission to not respond, do nothing, stay in. Sometimes choosing not act is the best action you can take.",
 	             },
-              }])
+              ])
               .then(() => {
-                return knex.raw("SELECT setval('acornsdb_id_seq', (SELECT MAX(id) FROM acornsdb));"
+                return knex.raw("SELECT setval('acorns_id_seq', (SELECT MAX(id) FROM acorns));"
               )
           })
       })
