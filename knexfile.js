@@ -2,11 +2,11 @@ module.exports = {
 
   development: {
     client: 'pg',
-    connection: 'postgresql://localhost:5432/acornsdb'
+    connection: 'postgresql://localhost:5432/acorn'
   },
   test: {
     client: 'pg',
-    connection: 'postgresql://localhost:5432/acornsdb'
+    connection: 'postgresql://localhost:5432/acorn'
   },
   production: {
     client: 'pg',
