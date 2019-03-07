@@ -30,7 +30,7 @@ exports.seed = function(knex) {
                 email: "pqcat919@icloud.com",
                 icon: 'public/images/balloon.png',
                },
-             }])
+             ])
               .then(() => {
                 return knex.raw("SELECT setval('acorn-usersdb_id_seq', (SELECT MAX(id) FROM acorn-usersdb));"
               )
