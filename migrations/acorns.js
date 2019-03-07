@@ -6,9 +6,6 @@ exports.up = function(knex) {
     table.string('title').notNullable()
     table.string('category').notNullable()
     table.text('content').notNullable()
-    table.text('symptomatic_experience').notNullable()
-    table.text('mindful_ways').notNullable()
-    table.boolean("is_favorite").notNullable().defaultTo(false)
     table.timestamps(true, true)
   })
 }
