@@ -7,11 +7,6 @@ exports.up = function(knex) {
     table.string('category').notNullable()
     table.text('content').notNullable()
     table.string('src').notNullable()
-    table.text('altText').notNullable()
-    table.text('header').notNullable()
-    table.text('caption').notNullable()
-
-
     table.timestamps(true, true)
   })
 }
