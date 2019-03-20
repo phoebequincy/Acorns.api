@@ -77,6 +77,22 @@ exports.seed = function(knex) {
                 src: './images/nothing.jpg',
 
 	             },
+               {
+                id: 11,
+                title: "What if...",
+	              category: "Wisdom",
+                content: "...everything you're going through is preparing you for what you asked for?",
+                src: './images/whatif.jpg',
+
+	             },
+               {
+                id: 12,
+                title: "An apple a day...",
+	              category: "Food",
+                content: "Make some apple crumble tonight. For a twist, add a pinch of freshly grated ginger.",
+                src: './images/applecrumble.jpg',
+
+	             },
               ])
               .then(() => {
                 return knex.raw("SELECT setval('acorns_id_seq', (SELECT MAX(id) FROM acorns));"
