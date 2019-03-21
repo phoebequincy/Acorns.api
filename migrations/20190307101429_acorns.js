@@ -6,7 +6,6 @@ exports.up = function(knex) {
     table.string('title').notNullable()
     table.string('category').notNullable()
     table.text('content').notNullable()
-    table.text('src').notNullable()
     table.timestamps(true, true)
   })
 }

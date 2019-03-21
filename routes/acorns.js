@@ -18,7 +18,7 @@ router.get('/', function(req, res, next) {
 router.get('/:id', function(req, res, next) {
   return knex('acorns')
   .where('id', req.params.id)
-  .select('id', 'title', 'category', 'content', 'src')
+  .select('id', 'title', 'category', 'content')
   .first()
   .then(data => {
     res.status(200).json(data)
