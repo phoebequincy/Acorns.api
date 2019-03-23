@@ -14,6 +14,7 @@
     "cors": "^2.8.5",
     "debug": "~2.6.9",
     "dotenv": "^6.2.0",
+    "node-env-run": "^3.0.2",
     "express": "~4.16.0",
     "heroku": "^7.22.4",
     "knex": "^0.16.3",
@@ -21,9 +22,13 @@
     "morgan": "~1.9.0",
     "nodemon": "^1.18.10",
     "pg": "^7.8.1",
+    "pino": "^5.11.3",
+    "express-pino-logger": "^4.0.0",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "reactstrap": "^7.1.0",
-    "supertest": "^3.4.2"
+    "supertest": "^3.4.2",
+    "pino-colada": "^1.4.4",
+    "twilio": "^3.29.2"
   }
 }
