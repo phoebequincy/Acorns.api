@@ -30,5 +30,9 @@
     "supertest": "^3.4.2",
     "pino-colada": "^1.4.4",
     "twilio": "^3.29.2"
-  }
+  },
+  "proxy": "http://localhost:3001",
+  "eslintConfig": {
+    "extends": "react-app"
+  },
 }
