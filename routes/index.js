@@ -4,6 +4,7 @@ const express = require('express')
 const knex = require('../knex.js')
 const router = express.Router();
 
+
 //get all
 router.get('/', function(req, res, next) {
   return knex('acorns')
@@ -24,22 +25,6 @@ router.get('/:id', function(req, res, next) {
   })
 })
 
-router.post('/api/messages', (req, res) => {
-  res.header('Content-Type', 'application/json');
-  client.messages
-    .create({
-      from: process.env.TWILIO_PHONE_NUMBER,
-      to: req.body.to,
-      body: req.body.body
-    })
-    .then(() => {
-      res.send(JSON.stringify({ success: true }));
-    })
-    .catch(err => {
-      console.log(err);
-      res.send(JSON.stringify({ success: false }));
-    });
-});
 
 router.patch('/:id', function(req, res, next) {
   knex('acorns')
