@@ -1,7 +1,10 @@
 const express = require('express')
 const router = express.Router()
 
-var client = require('twilio')(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN);
+const client = require('twilio')(
+  process.env.TWILIO_ACCOUT_SID,
+  process.env.TWILIO_AUTH_TOKEN
+);
 
 router.post('/', async(req, res) => {
   try {
