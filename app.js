@@ -6,7 +6,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var cors = require('cors');
 
-var usersRouter = require('./routes/users');
+
 var acornsRouter = require('./routes/acorns');
 var twilioRouter = require('./routes/twilioroute')
 
@@ -29,7 +29,6 @@ app.use(cors());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/acorns',acornsRouter);
-app.use('/users', usersRouter);
 app.use('/sms', twilioRouter);
 
 // catch 404 and forward to error handler
