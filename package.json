@@ -18,7 +18,7 @@
     "express-pino-logger": "^4.0.0",
     "heroku": "^7.22.4",
     "knex": "^0.19.5",
-    "mocha": "^6.0.2",
+    "mocha": "^6.2.3",
     "morgan": "~1.9.0",
     "node-env-run": "^3.0.2",
     "nodemon": "^1.18.10",
